@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body><div id="p" style="width:100vw; height:100vh; box-sizing: border-box; position:fixed; left:0; top:0; background-color: blue; padding:5vw; font-size:5vw; text-align: center; user-select: none;" onclick="Copy(event);">
+<body><div id="p" style="width:100vw; height:100vh; box-sizing: border-box; position:fixed; left:0; top:0; background-color: blue; padding:5vw; font-size:10vw; text-align: center; user-select: none;" onclick="Copy(event);">
 </div></body>
 <script>
     var text = "";
@@ -9,7 +9,7 @@
     function createIndex(x) {
         let o = "";
         for (let y of x) {
-            o += "<div style='color:"+y.color+"' data-target='"+y.cf+"'>"+y.name+"</div>";
+            o += "<div style='color:"+y.color+"' data-target='"+y.cf+"'>"+y.name+"</div><br>";
         }
         return o;
     }
